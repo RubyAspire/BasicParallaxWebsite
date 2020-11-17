@@ -1,0 +1,151 @@
+:root{
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #777;
+}
+
+html, body{
+    margin: 0;
+    height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+.bgimg1, .bgimg2{
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    background-size: cover;/*so that image uses the entire space*/
+    background-attachment: fixed;/*adds the parallax effect*/
+}
+
+.bgimg1{
+    background-image: url("../images/chess-op.jpg");
+    min-height: 100%;/*uses image full height*/
+}
+
+.bgimg2{
+    background-image: url("../images/chess-players.jpg");
+    min-height: 20rem;
+}
+.title-container{
+    position: absolute;
+    width: 100%;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.7rem;
+    top: 50%;
+}
+
+.header-title{
+    background-color: #333;
+    padding: 1rem;
+}
+
+.fade-in{
+    animation: fadeIn ease 0.5s;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}
+.navbar{
+    padding: 1rem 0;
+    position: fixed;
+    z-index: 1;
+    color: black;
+}
+
+.navbar-scroll{
+    background-color: #fff;
+    box-shadow: 2px 2px 5px #333;
+    width: 100vw;
+    color: #333;
+}
+.nav-link{
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+    color: #f3f3f3;
+}
+.nav-link-scroll{
+    color: #333;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+}
+.navbar>a:hover{
+    background: #333;
+    color: #f3f3f3;
+}
+
+.section{
+    margin:auto;
+    width: 70%;
+    font-size: 1.2rem;
+    padding: 2rem;
+}
+
+.section>h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.facts{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.facts>article img{
+    width: 80%;
+}
+
+.facts>aside{
+    width: 50%;
+}
+.facts>aside h3{
+    padding-bottom: 1rem;
+}
+
+.card-container{
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+.cards{
+    /*display: grid;
+    grid-template-columns: 35% 35% 35%;
+    margin-top: 2rem;
+    row-gap: 4rem;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    width: 35rem;
+    margin-top: 2rem;
+}
+
+.card>.card-img{
+    padding:0 1rem;
+}
+
+.card>.card-info{
+    color: #333;
+}
+
+.info-title{
+    font-weight: bold;
+}
